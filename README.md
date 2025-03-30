@@ -52,6 +52,7 @@ GET /users/{id} (uwzględniając obsługę błędów)
 DELETE /users/{id} (uwzględniając obsługę błędów)
 
 ![image](https://github.com/user-attachments/assets/57e0486c-24c9-4f34-94a4-0b4364b77570)
+
 Nie można usunąć użytkownika, który ma wypożyczoną książkę
 
 ![image](https://github.com/user-attachments/assets/4d085ae7-f96e-4006-86a0-f31a189d6f56)
