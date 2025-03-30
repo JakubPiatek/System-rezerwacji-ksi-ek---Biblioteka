@@ -27,7 +27,7 @@ Plik sql z zapisanym rekordami do bazy danych
 Połączenie do bazy danych
 ![image](https://github.com/user-attachments/assets/753b2ed1-fd74-4137-8546-8f98b802d078)
 
-Możliwość wykonywania zapytań w przeglądarce, po uruchomieniu aplikacji 
+Możliwość wykonywania zapytań w przeglądarce po uruchomieniu aplikacji 
 ![image](https://github.com/user-attachments/assets/6d6962f7-f041-4cca-909b-ac1105a1beeb)
 
 3. Wymagania dotyczące aplikacji
