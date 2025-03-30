@@ -8,7 +8,7 @@ pobranie informacji o książce wraz z jej historią wypożyczeń
 wypożyczenie oraz zwrot książki przez użytkownika
 
 
-2. Projekt wygenerowany za pomocą https://start.spring.io projekt startowy dla języka Java oparty o narzędzie Maven. Wymagania do projektu:
+1. Projekt wygenerowany za pomocą https://start.spring.io projekt startowy dla języka Java oparty o narzędzie Maven. Wymagania do projektu:
 Wersja Spring Boot: 3.3.10
 Java: 21
 Wymagane Zależności:
@@ -17,7 +17,7 @@ Baza danych H2
 Moduł Flyway
 JDBC API
 
-3.Tabela bazy danych:
+2.Tabela bazy danych:
 ![image](https://github.com/user-attachments/assets/acab7d79-5c6b-4eb0-a5a0-413433787946)
 
 Plik sql z zapisanym rekordami do bazy danych 
@@ -35,12 +35,12 @@ Wymagania dotyczące aplikacji
 Zasoby i funkcjonalność są udostępniane przez REST API zgodne z dokumentacją zawartą w pliku library-rest-service.yaml
 Aplikacja powinna wykorzystywać wbudowaną bazę danych H2 do przechowywania danych w tabeli.
 
-5. Wymagania dotyczące aplikacji
+3. Wymagania dotyczące aplikacji
 Dostęp do aplikacji nie powinien wymagać autoryzacji, a po uruchomieniu aplikacji wszystkie zasoby powinny być dostępne pod adresem http://localhost:8080
 Zasoby i funkcjonalność są udostępniane przez REST API zgodne z dokumentacją zawartą w pliku library-rest-service.yaml
 ![image](https://github.com/user-attachments/assets/8da9bce7-7c87-41d3-8f49-d56a19d07aad)
 
-6. Wyniki testów dla następujących metod wraz z omówieniem dołącz do sprawozdania.
+4. Wyniki testów dla następujących metod wraz z omówieniem dołącz do sprawozdania.
 Uzytkownicy:
 GET /users 
 ![image](https://github.com/user-attachments/assets/1d8ee3da-0e99-4a7e-b067-a0a81a96cd2b)
