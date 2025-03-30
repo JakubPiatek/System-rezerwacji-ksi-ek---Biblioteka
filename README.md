@@ -4,18 +4,18 @@ Aplikacja powinna umożliwiać:
 
 pobranie listy użytkowników, usuwanie oraz dodawanie nowych użytkowników,
 pobranie listy dostępnych książek,
-pobranie informacji o książce wraz z jej historią wypożyczeń
-wypożyczenie oraz zwrot książki przez użytkownika
+pobranie informacji o książce wraz z jej historią wypożyczeń,
+wypożyczenie oraz zwrot książki przez użytkownika,
 
 
 1. Projekt wygenerowany za pomocą https://start.spring.io projekt startowy dla języka Java oparty o narzędzie Maven. Wymagania do projektu:
 Wersja Spring Boot: 3.3.10
 Java: 21
 Wymagane Zależności:
-Spring Web
-Baza danych H2
-Moduł Flyway
-JDBC API
+Spring Web,
+Baza danych H2,
+Moduł Flyway,
+JDBC API,
 
 2.Tabela bazy danych:
 ![image](https://github.com/user-attachments/assets/acab7d79-5c6b-4eb0-a5a0-413433787946)
