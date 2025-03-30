@@ -14,7 +14,7 @@ Wymagane Zależności:
 Spring Web,
 Baza danych H2,
 Moduł Flyway,
-JDBC API.
+JDBC API
 2.Tabela bazy danych
 ![image](https://github.com/user-attachments/assets/c54e7a59-fa79-41d4-95e6-1af0c1c6a898)
 
