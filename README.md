@@ -8,9 +8,10 @@ pobranie informacji o książce wraz z jej historią wypożyczeń,
 wypożyczenie oraz zwrot książki przez użytkownika,
 
 
-1. Projekt wygenerowany za pomocą https://start.spring.io projekt startowy dla języka Java oparty o narzędzie Maven. Wymagania do projektu:
-Wersja Spring Boot: 3.3.10
-Java: 21
+1. Projekt wygenerowany za pomocą https://start.spring.io projekt startowy dla języka Java oparty o narzędzie Maven.
+Wymagania do projektu:
+Wersja Spring Boot: 3.3.10,
+Java: 21.
 Wymagane Zależności:
 Spring Web,
 Baza danych H2,
