@@ -19,7 +19,7 @@ Moduł Flyway,
 JDBC API.
 
 Tabela bazy danych
-![image](https://github.com/user-attachments/assets/acab7d79-5c6b-4eb0-a5a0-413433787946)
+![image](https://github.com/user-attachments/assets/c54e7a59-fa79-41d4-95e6-1af0c1c6a898)
 
 Plik sql z zapisanym rekordami do bazy danych 
 ![image](https://github.com/user-attachments/assets/d5be4589-8f55-4e4f-a894-89dcc401f8aa)
