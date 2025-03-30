@@ -31,11 +31,13 @@ Możliwość wykonywania zapytań w przeglądarce po uruchomieniu aplikacji
 ![image](https://github.com/user-attachments/assets/6d6962f7-f041-4cca-909b-ac1105a1beeb)
 
 3. Wymagania dotyczące aplikacji
-Dostęp do aplikacji nie powinien wymagać autoryzacji, a po uruchomieniu aplikacji wszystkie zasoby powinny być dostępne pod adresem http://localhost:8080
-Zasoby i funkcjonalność są udostępniane przez REST API zgodne z dokumentacją zawartą w pliku library-rest-service.yaml
+Dostęp do aplikacji nie powinien wymagać autoryzacji, a po uruchomieniu aplikacji wszystkie zasoby powinny być dostępne pod adresem http://localhost:8080.
+
+Zasoby i funkcjonalność są udostępniane przez REST API zgodne z dokumentacją zawartą w pliku library-rest-service.yaml.
+
 ![image](https://github.com/user-attachments/assets/8da9bce7-7c87-41d3-8f49-d56a19d07aad)
 
-4. Wyniki testów dla następujących metod wraz z omówieniem dołącz do sprawozdania.
+5. Wyniki testów dla następujących metod wraz z omówieniem dołącz do sprawozdania.
 Uzytkownicy:
 GET /users 
 ![image](https://github.com/user-attachments/assets/1d8ee3da-0e99-4a7e-b067-a0a81a96cd2b)
