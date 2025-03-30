@@ -5,9 +5,7 @@ Aplikacja powinna umożliwiać:
 pobranie listy użytkowników, usuwanie oraz dodawanie nowych użytkowników,
 pobranie listy dostępnych książek,
 pobranie informacji o książce wraz z jej historią wypożyczeń,
-wypożyczenie oraz zwrot książki przez użytkownika,
-
-
+wypożyczenie oraz zwrot książki przez użytkownika.
 1. Projekt wygenerowany za pomocą https://start.spring.io projekt startowy dla języka Java oparty o narzędzie Maven.
 Wymagania do projektu:
 Wersja Spring Boot: 3.3.10,
@@ -17,8 +15,7 @@ Spring Web,
 Baza danych H2,
 Moduł Flyway,
 JDBC API.
-
-Tabela bazy danych
+2.Tabela bazy danych
 ![image](https://github.com/user-attachments/assets/c54e7a59-fa79-41d4-95e6-1af0c1c6a898)
 
 Plik sql z zapisanym rekordami do bazy danych 
@@ -27,14 +24,8 @@ Plik sql z zapisanym rekordami do bazy danych
 Połaczenie do bazy danych:
 ![image](https://github.com/user-attachments/assets/753b2ed1-fd74-4137-8546-8f98b802d078)
 
-
 Możliwość wykonywania zapytań w przeglądarxe, po uruchomieniu aplikacji 
 ![image](https://github.com/user-attachments/assets/6d6962f7-f041-4cca-909b-ac1105a1beeb)
-
-
-Wymagania dotyczące aplikacji
-Zasoby i funkcjonalność są udostępniane przez REST API zgodne z dokumentacją zawartą w pliku library-rest-service.yaml
-Aplikacja powinna wykorzystywać wbudowaną bazę danych H2 do przechowywania danych w tabeli.
 
 3. Wymagania dotyczące aplikacji
 Dostęp do aplikacji nie powinien wymagać autoryzacji, a po uruchomieniu aplikacji wszystkie zasoby powinny być dostępne pod adresem http://localhost:8080
