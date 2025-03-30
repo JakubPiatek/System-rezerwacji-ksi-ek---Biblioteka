@@ -17,8 +17,7 @@ Spring Web,
 Baza danych H2,
 Moduł Flyway,
 JDBC API.
-
-2.Tabela bazy danych:
+2.Tabela bazy danych
 ![image](https://github.com/user-attachments/assets/acab7d79-5c6b-4eb0-a5a0-413433787946)
 
 Plik sql z zapisanym rekordami do bazy danych 
