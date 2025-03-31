@@ -108,7 +108,28 @@ Nieprawidłowy format ID użytkownika.
 ![image](https://github.com/user-attachments/assets/d6b28f79-c3e0-4cff-8d11-bf23dcc37f6b)
 Użytkownik o podanym ID nie istnieje
 
+```diff
 ! -- DELETE /users (uwzględniając obsługę błędów)
+```
+![image](https://github.com/user-attachments/assets/bdd2057e-f8e7-41d2-812f-ce645c7708b1)
+Usuwa użytkownika o podanym {id} z systemu
+
+![image](https://github.com/user-attachments/assets/e177604b-ce5c-4c0c-898f-fe9f18ceb6c2)
+Nie można usunąć użytkownika jeśli posiada na koncie nie oddane książki
+
+![image](https://github.com/user-attachments/assets/2ea8f4f4-8857-49fe-8d3a-f44623e02a4a)
+Nieprawidłowy format ID użytkownika.
+
+![image](https://github.com/user-attachments/assets/f65c7052-538f-453d-b76b-7fac8b82a8be)
+
+Użytkownik o podanym ID nie istnieje
+
+### Przykładowe wyniki dla metod dotyczących zasobu /books, reprezentującego książki
+Wyniki testów dla poniższych metod, wraz z omówieniem:
+```diff
+! -- GET /books
+```
+
 
 
 
