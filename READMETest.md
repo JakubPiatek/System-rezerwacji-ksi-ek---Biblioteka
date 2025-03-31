@@ -34,14 +34,14 @@ Po pobraniu projektu uruchom aplikację za pomocą:
 
 ![image](https://github.com/user-attachments/assets/5e810cbf-e152-4c9c-b9f1-475eb513ce98)
 
-# Tabela bazy danych H2
+# Bazy danych H2
 
 ## Diagram ERD bazy danych
 ![image](https://github.com/user-attachments/assets/c54c2297-46c3-4c5a-96c6-8b251d07d78f)
 
 
-### Możliwość wykonywania zapytań w przeglądarce po uruchomieniu aplikacji: 
-### Po wpisaniu adresu url:
+## Możliwość wykonywania zapytań w przeglądarce po uruchomieniu aplikacji: 
+Po wpisaniu adresu url:
 ```bash
 http://localhost:8080/h2-console/
 ```
@@ -51,6 +51,9 @@ http://localhost:8080/h2-console/
 > * NAME – Imię i nazwisko użytkownika.
 > * ROLES – Role przypisane do użytkownika (np. user, admin), określające jego uprawnienia w systemie.
 
+![image](https://github.com/user-attachments/assets/0b82a8ab-fe1d-4d52-a21a-799eadf7732f)
+
+
 ## Tabela `books`
 ### Tabela `books` przechowuje informacje o książkach dostępnych w bibliotece. Każdy rekord w tabeli reprezentuje jedną książkę i zawiera następujące pola:
 > * ID – Unikalny identyfikator książki.
@@ -58,33 +61,17 @@ http://localhost:8080/h2-console/
 > * AUTHOR – Autor książki.
 > * QUANTITY - Całkowita liczba egzemplarzy danej książki dostępnych w bibliotece (niezależnie od aktualnej liczby wypożyczonych egzemplarzy).
 
+![image](https://github.com/user-attachments/assets/5885276f-124f-4a7a-acab-f8045a3df9cd)
 
+## Tabela `rentals`
+### Tabela `rentals` przechowuje informacje o wypożyczeniach książek przez użytkowników. Każdy rekord w tabeli reprezentuje jedno wypożyczenie książki i zawiera następujące pola:
+> * ID – Unikalny identyfikator wypożyczenia.
+> * USERID_FK – Identyfikator użytkownika, który wypożyczył książkę (klucz obcy powiązany z tabelą users).
+> * BOOKID_FK – Identyfikator książki, która została wypożyczona (klucz obcy powiązany z tabelą books).
+> * RENTAL_DATE - Data wypożyczenia książki 
+> * RETURN_DATE - Data zwrócenia książki.
 
-
-ROLES – Role przypisane do użytkownika (np. user, admin), określające jego uprawnienia w systemie.
-rzechowuję dane użytkowników systemu. Zawiera informacje o identyfikatorze użytkownika (ID), nazwię użytkownika oraz przypisanych rolach. 
-* Przechowuję dane użytkowników systemu. Zawiera informacje o identyfikatorze użytkownika (ID), nazwię użytkownika oraz przypisanych rolach. 
-![image](https://github.com/user-attachments/assets/7fdd359c-5099-4cd9-b515-ea3c11967272)
-
-
-## Tabela `books`
-Tabela users przechowuje informacje o użytkownikach systemu bibliotecznego. Każdy rekord w tabeli reprezentuje jednego użytkownika i zawiera następujące pola:
-
-: Przechowuje informacje o książkach dostępnych w bazie danych. Zawiera dane takie jak identyfikator książki (ID), tytuł, autora oraz liczbę wszystkich egzemplarzy niezależnie ile ajtualnie jest dostępnych książek do wypożyczenia.
-
-![image](https://github.com/user-attachments/assets/7fdd359c-5099-4cd9-b515-ea3c11967272)
-
-## Tabela `books`:  Przechowuje informacje o książkach dostępnych w bazie danych. Zawiera dane takie jak identyfikator książki (ID), tytuł, autora oraz całkowitą liczbę egzemplarzy, niezależnie od tego, ile z nich jest aktualnie dostępnych do wypożyczenia.
-
-![image](https://github.com/user-attachments/assets/7fdd359c-5099-4cd9-b515-ea3c11967272)
-
-## Tabela `rentals`:  Przechowuje informacje o książkach dostępnych w bazie danych. Zawiera dane takie jak identyfikator książki (ID), tytuł, autora oraz całkowitą liczbę egzemplarzy, niezależnie od tego, ile z nich jest aktualnie dostępnych do wypożyczenia.
-
-![image](https://github.com/user-attachments/assets/7fdd359c-5099-4cd9-b515-ea3c11967272)
-
-
-
-
+![image](https://github.com/user-attachments/assets/dc87e579-2855-4ae1-a84b-08ff8d4bcfae)
 
 ## Funkcje systemu
 System rezerwacji książek w bibliotece umożliwia
