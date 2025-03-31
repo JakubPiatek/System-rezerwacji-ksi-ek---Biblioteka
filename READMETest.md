@@ -11,10 +11,8 @@ Aby rozpocząć pracę z projektem, należy zainstalować odpowiednie oprogramow
 ## Wymagania dotyczące aplikacji
 1. Dostęp do systemu: Nie wymaga autoryzacji.
 2. Adres dostępności: Po uruchomieniu aplikacji zasoby powinny być dostępne pod adresem: http://localhost:8080.
-3. Zasoby i funkcjonalności: Udostępniane przez REST API zgodne z dokumentacją zawartą w pliku library-rest-service.yaml.
-4. Baza danych: Aplikacja powinna wykorzystywać wbudowaną bazę danych H2 do przechowywania stanu systemu.
-
-
+3. Baza danych: Aplikacja powinna korzystać z wbudowanej bazy danych H2, przechowującej dane w pamięci operacyjnej, które są usuwane po zamknięciu aplikacji.
+4. 
 ## Instalacja
 Projekt został wygenerowany za pomocą Spring Initializr[https://start.spring.io] projekt startowy dla języka Java 21 oparty o narzędzie Maven. Wymagania do projektu:
 > * Metoda dystrybucji: **JAR**
@@ -91,9 +89,6 @@ Wyniki testów dla poniższych metod, wraz z omówieniem:
 ![image](https://github.com/user-attachments/assets/1d8ee3da-0e99-4a7e-b067-a0a81a96cd2b)
 
 Zwrócenie listy wszystkich użytkowników.
-
-
-
 
 ! -- DELETE /users (uwzględniając obsługę błędów)
 ! -- POST /users
