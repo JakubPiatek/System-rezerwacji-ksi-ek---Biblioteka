@@ -93,20 +93,33 @@ Zwraca listę użytkowników.
 ```diff
 ! -- POST /users
 ```
-![image](https://github.com/user-attachments/assets/9015b0c1-ab1b-46de-8ff8-a9a359de3941)
+![image](https://github.com/user-attachments/assets/4e964f6c-dac3-4e75-9c72-8df9862a9ee3)****
 
 Dodaje nowego użytkownika do systemu.
 
 ```diff
-! -- GET /users/{id}
+! -- GET /users/{id} (uwzględniając obsługę błędów)
 ```
-
-![image](https://github.com/user-attachments/assets/81c98089-0130-4e6f-b1bb-133d1c5ad835)
+![image](https://github.com/user-attachments/assets/99b0f052-5e38-4d03-8de6-f13f697af636)
 
 Informacje o koncie użytkownika o podanym {id}.
 
+![image](https://github.com/user-attachments/assets/82d4b027-5dae-4e94-be9b-11f2ca1710c7)
+ID użytkownika w złym formacie
+
+
+![image](https://github.com/user-attachments/assets/d6b28f79-c3e0-4cff-8d11-bf23dcc37f6b)
+Użytkownik o podanym ID nie istnieje
+
+
+
+
+
 
 ! -- DELETE /users (uwzględniając obsługę błędów)
+
+
+
 ! -- POST /users
 ! -- GET /books (uwzględniając filtrowanie)
 ! -- PATCH /books/return lub PATCH /books/rent (uwzględniając obsługę błędów)
@@ -120,12 +133,6 @@ System rezerwacji książek w bibliotece umożliwia
 Uzytkownicy:
 GET /users
 
-
-![image](https://github.com/user-attachments/assets/1d8ee3da-0e99-4a7e-b067-a0a81a96cd2b)
-
-GET /users/{id} (uwzględniając obsługę błędów)
-
-![image](https://github.com/user-attachments/assets/a9d84913-105c-4dca-983a-f54eabe8b33b)
 
 
 DELETE /users/{id} (uwzględniając obsługę błędów)
