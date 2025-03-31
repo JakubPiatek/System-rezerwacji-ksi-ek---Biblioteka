@@ -45,19 +45,26 @@ Po wpisaniu adresu url:
 ```bash
 http://localhost:8080/h2-console/
 ```
-
-
 ## Tabela `users`: Przechowuję dane użytkowników systemu. Zawiera informacje o identyfikatorze użytkownika (ID), nazwię użytkownika oraz przypisanych rolach. 
 
+![image](https://github.com/user-attachments/assets/7fdd359c-5099-4cd9-b515-ea3c11967272)
+
+
+## Tabela `books`: Przechowuje informacje o książkach dostępnych w bazie danych. Zawiera dane takie jak identyfikator książki (ID), tytuł, autora oraz liczbę wszystkich egzemplarzy niezależnie ile ajtualnie jest dostępnych książek do wypożyczenia.
+
+![image](https://github.com/user-attachments/assets/7fdd359c-5099-4cd9-b515-ea3c11967272)
+
+## Tabela `books`:  Przechowuje informacje o książkach dostępnych w bazie danych. Zawiera dane takie jak identyfikator książki (ID), tytuł, autora oraz całkowitą liczbę egzemplarzy, niezależnie od tego, ile z nich jest aktualnie dostępnych do wypożyczenia.
+
+![image](https://github.com/user-attachments/assets/7fdd359c-5099-4cd9-b515-ea3c11967272)
+
+## Tabela `rentals`:  Przechowuje informacje o książkach dostępnych w bazie danych. Zawiera dane takie jak identyfikator książki (ID), tytuł, autora oraz całkowitą liczbę egzemplarzy, niezależnie od tego, ile z nich jest aktualnie dostępnych do wypożyczenia.
+
+![image](https://github.com/user-attachments/assets/7fdd359c-5099-4cd9-b515-ea3c11967272)
 
 
 
 
-
-
-```bash
-http://localhost:8080/h2-console/
-```
 
 ## Funkcje systemu
 System rezerwacji książek w bibliotece umożliwia
@@ -102,11 +109,9 @@ Po wpisaniu adresu ur
 
 Tabela użytkowników
 
-
 ![image](https://github.com/user-attachments/assets/b23ce30a-5152-444e-bb24-c768c83ba5d9)
 
 Tabela książek
-
 
 ![image](https://github.com/user-attachments/assets/abf9dda4-e16d-4ece-b35a-9632d43b09e7)
 
