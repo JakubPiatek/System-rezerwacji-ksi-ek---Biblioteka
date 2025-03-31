@@ -47,8 +47,7 @@ Po pobraniu projektu uruchom aplikację za pomocą:
    spring.datasource.password=password
    spring.h2.console.enabled=true
 ```
-## Możliwość wykonywania zapytań w przeglądarce po uruchomieniu aplikacji
-Po wpisaniu adresu url:
+## Po uruchomieniu aplikacji dostęp do konsoli H2 w przeglądarce jest możliwy po wpisaniu odpowiedniego adresu URL:
 ```bash
 http://localhost:8080/h2-console/
 ```
