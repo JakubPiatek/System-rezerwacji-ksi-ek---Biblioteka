@@ -6,6 +6,7 @@ Celem Projektu jest utworzenie monolitycznej aplikacji udostępniającej interfe
 Aby rozpocząć pracę z projektem, należy zainstalować odpowiednie oprogramowanie:
 - Instalacja IntelliJ IDEA - Popularne IDE do pracy z Javą.
 - Instalacja Java SE 21 - Wymagana wersja Javy do uruchomienia projektu.
+- Instalacja Postman - narzędzia do testowania poprawności działania aplikacji.
 
 ## Wymagania dotyczące aplikacji
 1. Dostęp do systemu: Nie wymaga autoryzacji.
@@ -34,15 +35,15 @@ Po pobraniu projektu uruchom aplikację za pomocą:
 
 ![image](https://github.com/user-attachments/assets/5e810cbf-e152-4c9c-b9f1-475eb513ce98)
 
-# Bazy danych H2
+## Bazy danych H2
 
-## Diagram ERD bazy danych
+### Diagram ERD bazy danych
 ![image](https://github.com/user-attachments/assets/c54c2297-46c3-4c5a-96c6-8b251d07d78f)
 
-## Plik SQL z zapisanym rekordami do bazy danych 
+### Plik SQL z zapisanymi rekordami do bazy danych 
 ![image](https://github.com/user-attachments/assets/d5be4589-8f55-4e4f-a894-89dcc401f8aa)
 
-## Konfiguracja połączenia do bazy danych H2 została zapisana w pliku `application.properties`:
+### Konfiguracja połączenia do bazy danych H2 została zapisana w pliku `application.properties`:
 ```ini
    spring.datasource.url=jdbc:h2:mem:librarydb
    spring.datasource.driverClassName=org.h2.Driver
@@ -50,21 +51,20 @@ Po pobraniu projektu uruchom aplikację za pomocą:
    spring.datasource.password=password
    spring.h2.console.enabled=true
 ```
-## Po uruchomieniu aplikacji dostęp do konsoli H2 w przeglądarce jest możliwy po wpisaniu odpowiedniego adresu URL:
+### Po uruchomieniu aplikacji dostęp do konsoli H2 w przeglądarce jest możliwy po wpisaniu odpowiedniego adresu URL:
 ```bash
 http://localhost:8080/h2-console/
 ```
-## Tabela `users`
-### Tabela `users` przechowuje informacje o użytkownikach systemu bibliotecznego. Każdy rekord w tabeli reprezentuje jednego użytkownika i zawiera następujące pola:
+### Tabela `users`
+#### Tabela `users` przechowuje informacje o użytkownikach systemu bibliotecznego. Każdy rekord w tabeli reprezentuje jednego użytkownika i zawiera następujące pola:
 > * ID – Unikalny identyfikator użytkownika.
 > * NAME – Imię i nazwisko użytkownika.
 > * ROLES – Role przypisane do użytkownika (np. user, admin), określające jego uprawnienia w systemie.
 
 ![image](https://github.com/user-attachments/assets/0b82a8ab-fe1d-4d52-a21a-799eadf7732f)
 
-
-## Tabela `books`
-### Tabela `books` przechowuje informacje o książkach dostępnych w bibliotece. Każdy rekord w tabeli reprezentuje jedną książkę i zawiera następujące pola:
+### Tabela `books`
+#### Tabela `books` przechowuje informacje o książkach dostępnych w bibliotece. Każdy rekord w tabeli reprezentuje jedną książkę i zawiera następujące pola:
 > * ID – Unikalny identyfikator książki.
 > * TITLE – Tytuł książki.
 > * AUTHOR – Autor książki.
@@ -72,8 +72,8 @@ http://localhost:8080/h2-console/
 
 ![image](https://github.com/user-attachments/assets/5885276f-124f-4a7a-acab-f8045a3df9cd)
 
-## Tabela `rentals`
-### Tabela `rentals` przechowuje informacje o wypożyczeniach książek przez użytkowników. Każdy rekord w tabeli reprezentuje jedno wypożyczenie książki i zawiera następujące pola:
+### Tabela `rentals`
+#### Tabela `rentals` przechowuje informacje o wypożyczeniach książek przez użytkowników. Każdy rekord w tabeli reprezentuje jedno wypożyczenie książki i zawiera następujące pola:
 > * ID – Unikalny identyfikator wypożyczenia.
 > * USERID_FK – Identyfikator użytkownika, który wypożyczył książkę (klucz obcy powiązany z tabelą users).
 > * BOOKID_FK – Identyfikator książki, która została wypożyczona (klucz obcy powiązany z tabelą books).
@@ -83,6 +83,18 @@ http://localhost:8080/h2-console/
 ![image](https://github.com/user-attachments/assets/dc87e579-2855-4ae1-a84b-08ff8d4bcfae)
 
 ## Funkcje systemu
+### Przykładowe wyniki dla metod dla zasobu /users, reprezentującego użytkowników 
+```diff
+! Wyniki testów dla następujących metod wraz z omówieniem dołącz do sprawozdania.
+! -- GET /users (uwzględniając obsługę błędów)
+! -- DELETE /users (uwzględniając obsługę błędów)
+! -- POST /users
+! -- GET /books (uwzględniając filtrowanie)
+! -- PATCH /books/return lub PATCH /books/rent (uwzględniając obsługę błędów)
+```
+
+
+
 System rezerwacji książek w bibliotece umożliwia
 
 5. Wyniki testów dla następujących metod wraz z omówieniem dołącz do sprawozdania.
@@ -129,9 +141,13 @@ Zwraca informacje na temat wypożyczonych egzemplarzy dla tytułu o podanym {id}
 
 ![image](https://github.com/user-attachments/assets/8176f277-01ab-4009-b809-28a1a39b72ec)
 
+## Zasoby i funkcjonalność są udostępniane przez REST API zgodne z dokumentacją zawartą w pliku library-rest-service.yaml.
 
+![image](https://github.com/user-attachments/assets/8da9bce7-7c87-41d3-8f49-d56a19d07aad)
 
-
+## Wyniki testów dla następujących metod wraz z omówieniem dołącz do sprawozdania.
+### Uzytkownicy:
+GET /users
 
 
 
@@ -154,42 +170,7 @@ wypożyczenie oraz zwrot książki przez użytkownika.
 
 
 
-3.Tabela bazy danych H2
-4.
-5. Baza danych H2
-   
-Tabela bazy danych
-![image](https://github.com/user-attachments/assets/c54e7a59-fa79-41d4-95e6-1af0c1c6a898)
 
-Plik sql z zapisanym rekordami do bazy danych 
-![image](https://github.com/user-attachments/assets/d5be4589-8f55-4e4f-a894-89dcc401f8aa)
-
-Połączenie do bazy danych
-![image](https://github.com/user-attachments/assets/753b2ed1-fd74-4137-8546-8f98b802d078)
-
-Możliwość wykonywania zapytań w przeglądarce po uruchomieniu aplikacji: 
-Po wpisaniu adresu ur
-![image](https://github.com/user-attachments/assets/6001ca88-929f-44e1-b33d-29615d532d50)
-
-Tabela użytkowników
-
-![image](https://github.com/user-attachments/assets/b23ce30a-5152-444e-bb24-c768c83ba5d9)
-
-Tabela książek
-
-![image](https://github.com/user-attachments/assets/abf9dda4-e16d-4ece-b35a-9632d43b09e7)
-
-
-Tabela wypożyczeń
-
-![image](https://github.com/user-attachments/assets/60d177bb-26e2-4145-ae6a-b832c66b7744)
-
-4. Wymagania dotyczące aplikacji
-Dostęp do aplikacji nie powinien wymagać autoryzacji, a po uruchomieniu aplikacji wszystkie zasoby powinny być dostępne pod adresem http://localhost:8080.
-
-Zasoby i funkcjonalność są udostępniane przez REST API zgodne z dokumentacją zawartą w pliku library-rest-service.yaml.
-
-![image](https://github.com/user-attachments/assets/8da9bce7-7c87-41d3-8f49-d56a19d07aad)
 
 5. Wyniki testów dla następujących metod wraz z omówieniem dołącz do sprawozdania.
 Uzytkownicy:
