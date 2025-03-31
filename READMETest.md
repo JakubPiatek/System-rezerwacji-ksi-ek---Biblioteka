@@ -40,17 +40,37 @@ Po pobraniu projektu uruchom aplikację za pomocą:
 ![image](https://github.com/user-attachments/assets/c54c2297-46c3-4c5a-96c6-8b251d07d78f)
 
 
-Możliwość wykonywania zapytań w przeglądarce po uruchomieniu aplikacji: 
-Po wpisaniu adresu url:
+### Możliwość wykonywania zapytań w przeglądarce po uruchomieniu aplikacji: 
+### Po wpisaniu adresu url:
 ```bash
 http://localhost:8080/h2-console/
 ```
-## Tabela `users`: Przechowuję dane użytkowników systemu. Zawiera informacje o identyfikatorze użytkownika (ID), nazwię użytkownika oraz przypisanych rolach. 
+## Tabela `users`
+### Tabela `users` przechowuje informacje o użytkownikach systemu bibliotecznego. Każdy rekord w tabeli reprezentuje jednego użytkownika i zawiera następujące pola:
+> * ID – Unikalny identyfikator użytkownika.
+> * NAME – Imię i nazwisko użytkownika.
+> * ROLES – Role przypisane do użytkownika (np. user, admin), określające jego uprawnienia w systemie.
 
+## Tabela `books`
+### Tabela `books` przechowuje informacje o książkach dostępnych w bibliotece. Każdy rekord w tabeli reprezentuje jedną książkę i zawiera następujące pola:
+> * ID – Unikalny identyfikator książki.
+> * TITLE – Tytuł książki.
+> * AUTHOR – Autor książki.
+> * QUANTITY - Całkowita liczba egzemplarzy danej książki dostępnych w bibliotece (niezależnie od aktualnej liczby wypożyczonych egzemplarzy).
+
+
+
+
+ROLES – Role przypisane do użytkownika (np. user, admin), określające jego uprawnienia w systemie.
+rzechowuję dane użytkowników systemu. Zawiera informacje o identyfikatorze użytkownika (ID), nazwię użytkownika oraz przypisanych rolach. 
+* Przechowuję dane użytkowników systemu. Zawiera informacje o identyfikatorze użytkownika (ID), nazwię użytkownika oraz przypisanych rolach. 
 ![image](https://github.com/user-attachments/assets/7fdd359c-5099-4cd9-b515-ea3c11967272)
 
 
-## Tabela `books`: Przechowuje informacje o książkach dostępnych w bazie danych. Zawiera dane takie jak identyfikator książki (ID), tytuł, autora oraz liczbę wszystkich egzemplarzy niezależnie ile ajtualnie jest dostępnych książek do wypożyczenia.
+## Tabela `books`
+Tabela users przechowuje informacje o użytkownikach systemu bibliotecznego. Każdy rekord w tabeli reprezentuje jednego użytkownika i zawiera następujące pola:
+
+: Przechowuje informacje o książkach dostępnych w bazie danych. Zawiera dane takie jak identyfikator książki (ID), tytuł, autora oraz liczbę wszystkich egzemplarzy niezależnie ile ajtualnie jest dostępnych książek do wypożyczenia.
 
 ![image](https://github.com/user-attachments/assets/7fdd359c-5099-4cd9-b515-ea3c11967272)
 
