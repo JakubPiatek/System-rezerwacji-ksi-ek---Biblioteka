@@ -105,16 +105,11 @@ Dodaje nowego użytkownika do systemu.
 Informacje o koncie użytkownika o podanym {id}.
 
 ![image](https://github.com/user-attachments/assets/82d4b027-5dae-4e94-be9b-11f2ca1710c7)
-ID użytkownika w złym formacie
-
+ 
+Nieprawidłowy format ID użytkownika.
 
 ![image](https://github.com/user-attachments/assets/d6b28f79-c3e0-4cff-8d11-bf23dcc37f6b)
 Użytkownik o podanym ID nie istnieje
-
-
-
-
-
 
 ! -- DELETE /users (uwzględniając obsługę błędów)
 
