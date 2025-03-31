@@ -7,7 +7,8 @@ Celem Projektu jest utworzenie monolitycznej aplikacji udostępniającej interfe
 - Instalacja Java 21
 
 ## Wymagania dotyczące aplikacji
-1. Dostęp do aplikacji nie powinien wymagać autoryzacji, a po uruchomieniu aplikacji wszystkie zasoby powinny być dostępne pod adresem [http://localhost:8080](http://localhost:8080).
+1. Dostęp do systemu nie  wymaga autoryzacji
+2. Po uruchomieniu systemu wszystkie zasoby powinny być dostępne pod adresem (http://localhost:8080)
 1. Zasoby i funkcjonalność powinny być udostępniane przez REST API zgodne z dokumentacją zawartą w [docs/library-rest-service.yaml](https://epam-online-courses.github.io/ZTP-Java-REST-Monolith/).
 1. Aplikacja powinna wykorzystywać wbudowaną bazę danych H2 do przechowywania stanu systemu.
 
