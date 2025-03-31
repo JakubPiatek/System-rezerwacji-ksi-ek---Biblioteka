@@ -90,6 +90,10 @@ Wyniki testów dla poniższych metod, wraz z omówieniem:
 ```
 ![image](https://github.com/user-attachments/assets/1d8ee3da-0e99-4a7e-b067-a0a81a96cd2b)
 
+Zwrócenie listy wszystkich użytkowników.
+
+
+
 
 ! -- DELETE /users (uwzględniając obsługę błędów)
 ! -- POST /users
