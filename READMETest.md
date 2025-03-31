@@ -1,6 +1,24 @@
 # System Rezerwacji Książek - Biblioteka
 
+Celem Projektu jest utworzenie monolitycznej aplikacji udostępniającej interfejs REST w oparciu o Spring Boot i język Java.
+
+## Przygotowanie
+- Instalacja Intelij IDEA,
+- Instalacja Java 21
+
+## Wymagania dotyczące aplikacji
+1. Dostęp do aplikacji nie powinien wymagać autoryzacji, a po uruchomieniu aplikacji wszystkie zasoby powinny być dostępne pod adresem [http://localhost:8080](http://localhost:8080).
+1. Zasoby i funkcjonalność powinny być udostępniane przez REST API zgodne z dokumentacją zawartą w [docs/library-rest-service.yaml](https://epam-online-courses.github.io/ZTP-Java-REST-Monolith/).
+1. Aplikacja powinna wykorzystywać wbudowaną bazę danych H2 do przechowywania stanu systemu.
+
+
+Dostęp do aplikacji nie powinien wymagać autoryzacji, a po uruchomieniu aplikacji wszystkie zasoby powinny być dostępne pod adresem http://localhost:8080.
+
+Przed zajęciami proszę o zapoznanie się z [załączonymi materiałami](docs/introduction.md) oraz o zainstalowanie niezbędnego oprogramowania, które będzie wykorzystywane na tych i kolejnych zajęciach.
+W przypadku braku znajomości języka SQL polecam zapoznanie się z [dodatkowymi materiałami pomocniczymi](docs/sql_cheetsheet.md) wymaganymi do realizacji komunikacji z bazą danych.
+
 System rezerwacji książek w bibliotece umożliwia:
+
 
 - Pobieranie listy użytkowników, dodawanie nowych oraz usuwanie istniejących
 
@@ -10,40 +28,12 @@ System rezerwacji książek w bibliotece umożliwia:
 
 - Wypożyczanie oraz zwracanie książek przez użytkowników
 
-## Instalacja
+## Wymagania dotyczące aplikacji
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
-
-bash
-pip install foobar
-
-
-## Usage
-
-python
-import foobar
-
-# returns 'words'
-foobar.pluralize('word')
-
-# returns 'geese'
-foobar.pluralize('goose')
-
-# returns 'phenomenon'
-foobar.singularize('phenomena')
-
-
-## Contributing
-
-Pull requests are welcome. For major changes, please open an issue first
-to discuss what you would like to change.
-
-Please make sure to update tests as appropriate.
-
-## License
-
-[MIT](https://choosealicense.com/licenses/mit/) na podstawie tego zrób powyższ y opis
-
+1. Dostęp do aplikacji nie powinien wymagać autoryzacji, a po uruchomieniu aplikacji wszystkie zasoby powinny być dostępne pod adresem [http://localhost:8080](http://localhost:8080).
+1. Zasoby i funkcjonalność powinny być udostępniane przez REST API zgodne z dokumentacją zawartą w [docs/library-rest-service.yaml](https://epam-online-courses.github.io/ZTP-Java-REST-Monolith/).
+1. Aplikacja powinna wykorzystywać wbudowaną bazę danych H2 do przechowywania stanu systemu.
+   
 
 System powinien umożliwiać:
 pobranie listy użytkowników, usuwanie oraz dodawanie nowych użytkowników,
