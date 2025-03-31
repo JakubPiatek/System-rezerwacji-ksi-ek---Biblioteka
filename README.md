@@ -93,7 +93,7 @@ Zwraca listę użytkowników.
 ```diff
 ! -- POST /users
 ```
-![image](https://github.com/user-attachments/assets/4e964f6c-dac3-4e75-9c72-8df9862a9ee3)
+![image](https://github.com/user-attachments/assets/c3cb501d-cd2d-4ad0-b463-df0a48a810c9)
 
 Dodaje nowego użytkownika do systemu.
 
