@@ -1,6 +1,14 @@
-# Foobar
+# System Rezerwacji Książek - Biblioteka
 
-Foobar is a Python library for dealing with word pluralization.
+System rezerwacji książek w bibliotece umożliwia:
+
+(*)Pobieranie listy użytkowników, dodawanie nowych oraz usuwanie istniejących.
+
+(*)Pobieranie listy dostępnych książek.
+
+(*)Pobieranie informacji o konkretnej książce wraz z jej historią wypożyczeń.
+
+(*)Wypożyczanie oraz zwracanie książek przez użytkowników.
 
 ## Installation
 
@@ -35,11 +43,6 @@ Please make sure to update tests as appropriate.
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/) na podstawie tego zrób powyższ y opis
-
-
-
-
-#System Rezerwacji Książek - Biblioteka
 
 
 System powinien umożliwiać:
