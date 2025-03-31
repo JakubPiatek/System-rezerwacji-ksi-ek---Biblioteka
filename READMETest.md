@@ -37,7 +37,8 @@ Po pobraniu projektu uruchom aplikację za pomocą:
 # Tabela bazy danych H2
 
 Diagram ERD bazy danych
-![image](https://github.com/user-attachments/assets/80588b35-cc70-4656-a9c1-b3f26b409505)
+![image](https://github.com/user-attachments/assets/c54c2297-46c3-4c5a-96c6-8b251d07d78f)
+
 
 Możliwość wykonywania zapytań w przeglądarce po uruchomieniu aplikacji: 
 Po wpisaniu adresu url:
