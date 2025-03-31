@@ -15,7 +15,7 @@ Aby rozpocząć pracę z projektem, należy zainstalować odpowiednie oprogramow
 
 
 ## Instalacja
-Projekt został wygenerowany za pomocą Spring Initializr[https://start.spring.io] projekt startowy dla języka Java 11 oparty o narzędzie Maven. Wymagania do projektu:
+Projekt został wygenerowany za pomocą Spring Initializr[https://start.spring.io] projekt startowy dla języka Java 21 oparty o narzędzie Maven. Wymagania do projektu:
 > * Metoda dystrybucji: **JAR**
 > * Dane projektu:
 >    * Grupa: **com.portfolio**
