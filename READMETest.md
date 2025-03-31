@@ -160,9 +160,27 @@ Nieprawidłowy format ID książki.
 
 ![image](https://github.com/user-attachments/assets/41b264ac-6cf1-408a-826f-1de47b3b4b65)
 
+
+```diff
+! -- POST /books
+```
+Dodanie nowej książki do systemu.
+
 Książka o podanym ID nie istnieje.
 
+```diff
+!-- PATCH /books/rent/{id} (uwzględniając obsługę błędów)
+```
 
+Wypożyczenie egzemplarza książki o podanym {id} przez konretnego użytkownika.
+ID użytkownika podane w (header)
+
+```diff
+! -- PATCH /books/return/{id}  PATCH /books/rent (uwzględniając obsługę błędów)
+```
+
+Zwrot wypożyczonego egzemplarza książki o podanym {id} przez konretnego użytkownika.
+ID użytkownika podane w (header)
 
 
 
