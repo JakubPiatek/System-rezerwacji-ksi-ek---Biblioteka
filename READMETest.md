@@ -2,24 +2,50 @@
 
 Celem Projektu jest utworzenie monolitycznej aplikacji udostępniającej interfejs REST w oparciu o Spring Boot i język Java.
 
-## Przygotowanie
-- Instalacja Intelij IDEA,
-- Instalacja Java 21
+## Przygotowanie Środowiska
+Aby rozpocząć pracę z projektem, należy zainstalować odpowiednie oprogramowanie:
+- Instalacja IntelliJ IDEA - Popularne IDE do pracy z Javą.
+- Instalacja Java SE 21 - Wymagana wersja Javy do uruchomienia projektu.
 
 ## Wymagania dotyczące aplikacji
-1. Dostęp do systemu nie  wymaga autoryzacji
-2. Po uruchomieniu systemu wszystkie zasoby powinny być dostępne pod adresem (http://localhost:8080)
-1. Zasoby i funkcjonalność powinny być udostępniane przez REST API zgodne z dokumentacją zawartą w [docs/library-rest-service.yaml](https://epam-online-courses.github.io/ZTP-Java-REST-Monolith/).
-1. Aplikacja powinna wykorzystywać wbudowaną bazę danych H2 do przechowywania stanu systemu.
+1. Dostęp do systemu: Nie wymaga autoryzacji.
+2. Adres dostępności: Po uruchomieniu aplikacji zasoby powinny być dostępne pod adresem: http://localhost:8080.
+3. Zasoby i funkcjonalności: Udostępniane przez REST API zgodne z dokumentacją zawartą w pliku library-rest-service.yaml.
+4. Baza danych: Aplikacja powinna wykorzystywać wbudowaną bazę danych H2 do przechowywania stanu systemu.
 
 
-Dostęp do aplikacji nie powinien wymagać autoryzacji, a po uruchomieniu aplikacji wszystkie zasoby powinny być dostępne pod adresem http://localhost:8080.
+## Instalacja
+Projekt został wygenerowany za pomocą Spring Initializr[https://start.spring.io] projekt startowy dla języka Java 11 oparty o narzędzie Maven. Wymagania do projektu:
+> * Metoda dystrybucji: **JAR**
+> * Dane projektu:
+>    * Grupa: **com.portfolio**
+>    * Artefakt i nazwa: **library-monolith**
+>    * Opis: **Aplikacja typu monolit do obsługi biblioteki**
+>    * Nazwa paczki: **com.portfolio.library_monolith**
+> * Wersja Spring Boot: **3.3.10**
+> * Wymagane zależności:
+>    * Spring Web
+>    * Baza danych H2
+>    * Moduł Flyway
+>    * JDBC API
 
-Przed zajęciami proszę o zapoznanie się z [załączonymi materiałami](docs/introduction.md) oraz o zainstalowanie niezbędnego oprogramowania, które będzie wykorzystywane na tych i kolejnych zajęciach.
-W przypadku braku znajomości języka SQL polecam zapoznanie się z [dodatkowymi materiałami pomocniczymi](docs/sql_cheetsheet.md) wymaganymi do realizacji komunikacji z bazą danych.
+## Uruchomienie projektu 
+Po pobraniu projektu uruchom aplikację za pomocą:
+
+![image](https://github.com/user-attachments/assets/5e810cbf-e152-4c9c-b9f1-475eb513ce98)
+
+```bash
+http://localhost:8080/h2-console/
+
+
+
+
+## Funkcje systemu
+System rezerwacji książek w bibliotece umożliwia
+
+
 
 System rezerwacji książek w bibliotece umożliwia:
-
 
 - Pobieranie listy użytkowników, dodawanie nowych oraz usuwanie istniejących
 
@@ -29,12 +55,6 @@ System rezerwacji książek w bibliotece umożliwia:
 
 - Wypożyczanie oraz zwracanie książek przez użytkowników
 
-## Wymagania dotyczące aplikacji
-
-1. Dostęp do aplikacji nie powinien wymagać autoryzacji, a po uruchomieniu aplikacji wszystkie zasoby powinny być dostępne pod adresem [http://localhost:8080](http://localhost:8080).
-1. Zasoby i funkcjonalność powinny być udostępniane przez REST API zgodne z dokumentacją zawartą w [docs/library-rest-service.yaml](https://epam-online-courses.github.io/ZTP-Java-REST-Monolith/).
-1. Aplikacja powinna wykorzystywać wbudowaną bazę danych H2 do przechowywania stanu systemu.
-   
 
 System powinien umożliwiać:
 pobranie listy użytkowników, usuwanie oraz dodawanie nowych użytkowników,
@@ -42,19 +62,7 @@ pobranie listy dostępnych książek,
 pobranie informacji o książce wraz z jej historią wypożyczeń,
 wypożyczenie oraz zwrot książki przez użytkownika.
 
-1. Projekt wygenerowany za pomocą https://start.spring.io projekt startowy dla języka Java oparty o narzędzie Maven.
-Wymagania do projektu:
-Wersja Spring Boot: 3.3.10,
-Java: 21.
-Wymagane Zależności:
-Spring Web,
-Baza danych H2,
-Moduł Flyway,
-JDBC API
 
-2. Uruchomienie Systemu
-
-![image](https://github.com/user-attachments/assets/5e810cbf-e152-4c9c-b9f1-475eb513ce98)
 
 3. Baza danych H2
    
