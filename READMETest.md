@@ -36,7 +36,7 @@ Po pobraniu projektu uruchom aplikację za pomocą:
 
 # Tabela bazy danych H2
 
-Diagram ERD bazy danych
+## Diagram ERD bazy danych
 ![image](https://github.com/user-attachments/assets/c54c2297-46c3-4c5a-96c6-8b251d07d78f)
 
 
@@ -48,6 +48,9 @@ http://localhost:8080/h2-console/
 
 
 ## Tabela `users`: Przechowuję dane użytkowników systemu. Zawiera informacje o identyfikatorze użytkownika (ID), nazwię użytkownika oraz przypisanych rolach. 
+
+
+
 
 
 
