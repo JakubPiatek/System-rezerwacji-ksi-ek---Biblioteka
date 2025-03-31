@@ -1,11 +1,12 @@
-# System-rezerwacji-ksiazek-Biblioteka
+System Rezerwacji Książek - Biblioteka
 
-Aplikacja powinna umożliwiać:
 
+System powinien umożliwiać:
 pobranie listy użytkowników, usuwanie oraz dodawanie nowych użytkowników,
 pobranie listy dostępnych książek,
 pobranie informacji o książce wraz z jej historią wypożyczeń,
 wypożyczenie oraz zwrot książki przez użytkownika.
+
 1. Projekt wygenerowany za pomocą https://start.spring.io projekt startowy dla języka Java oparty o narzędzie Maven.
 Wymagania do projektu:
 Wersja Spring Boot: 3.3.10,
@@ -16,9 +17,13 @@ Baza danych H2,
 Moduł Flyway,
 JDBC API
 
+2. Uruchomienie Systemu
 
-2.Tabela bazy danych
+![image](https://github.com/user-attachments/assets/5e810cbf-e152-4c9c-b9f1-475eb513ce98)
 
+3. Baza danych H2
+   
+Tabela bazy danych
 ![image](https://github.com/user-attachments/assets/c54e7a59-fa79-41d4-95e6-1af0c1c6a898)
 
 Plik sql z zapisanym rekordami do bazy danych 
@@ -27,17 +32,33 @@ Plik sql z zapisanym rekordami do bazy danych
 Połączenie do bazy danych
 ![image](https://github.com/user-attachments/assets/753b2ed1-fd74-4137-8546-8f98b802d078)
 
-Możliwość wykonywania zapytań w przeglądarce po uruchomieniu aplikacji 
-![image](https://github.com/user-attachments/assets/6d6962f7-f041-4cca-909b-ac1105a1beeb)
+Możliwość wykonywania zapytań w przeglądarce po uruchomieniu aplikacji: 
+Po wpisaniu adresu ur
+![image](https://github.com/user-attachments/assets/6001ca88-929f-44e1-b33d-29615d532d50)
 
-3. Wymagania dotyczące aplikacji
+Tabela użytkowników
+
+
+![image](https://github.com/user-attachments/assets/b23ce30a-5152-444e-bb24-c768c83ba5d9)
+
+Tabela książek
+
+
+![image](https://github.com/user-attachments/assets/abf9dda4-e16d-4ece-b35a-9632d43b09e7)
+
+
+Tabela wypożyczeń
+
+![image](https://github.com/user-attachments/assets/60d177bb-26e2-4145-ae6a-b832c66b7744)
+
+4. Wymagania dotyczące aplikacji
 Dostęp do aplikacji nie powinien wymagać autoryzacji, a po uruchomieniu aplikacji wszystkie zasoby powinny być dostępne pod adresem http://localhost:8080.
 
 Zasoby i funkcjonalność są udostępniane przez REST API zgodne z dokumentacją zawartą w pliku library-rest-service.yaml.
 
 ![image](https://github.com/user-attachments/assets/8da9bce7-7c87-41d3-8f49-d56a19d07aad)
 
-4. Wyniki testów dla następujących metod wraz z omówieniem dołącz do sprawozdania.
+5. Wyniki testów dla następujących metod wraz z omówieniem dołącz do sprawozdania.
 Uzytkownicy:
 GET /users
 
