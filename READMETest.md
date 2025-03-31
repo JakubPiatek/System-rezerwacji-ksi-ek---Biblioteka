@@ -93,6 +93,7 @@ Zwraca listę użytkowników.
 ! -- POST /users
 ```
 ![image](https://github.com/user-attachments/assets/4e964f6c-dac3-4e75-9c72-8df9862a9ee3)
+
 Dodaje nowego użytkownika do systemu.
 
 ```diff
