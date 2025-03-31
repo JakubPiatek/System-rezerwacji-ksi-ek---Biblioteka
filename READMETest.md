@@ -77,7 +77,7 @@ http://localhost:8080/h2-console/
 > * ID – Unikalny identyfikator wypożyczenia.
 > * USERID_FK – Identyfikator użytkownika, który wypożyczył książkę (klucz obcy powiązany z tabelą users).
 > * BOOKID_FK – Identyfikator książki, która została wypożyczona (klucz obcy powiązany z tabelą books).
-> * RENTAL_DATE - Data wypożyczenia książki 
+> * RENTAL_DATE - Data wypożyczenia książki. 
 > * RETURN_DATE - Data zwrócenia książki.
 
 ![image](https://github.com/user-attachments/assets/dc87e579-2855-4ae1-a84b-08ff8d4bcfae)
