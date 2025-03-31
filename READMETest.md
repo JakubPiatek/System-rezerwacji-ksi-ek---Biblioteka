@@ -12,7 +12,7 @@ Aby rozpocząć pracę z projektem, należy zainstalować odpowiednie oprogramow
 1. Dostęp do systemu: Nie wymaga autoryzacji.
 2. Adres dostępności: Po uruchomieniu aplikacji zasoby powinny być dostępne pod adresem: http://localhost:8080.
 3. Baza danych: Aplikacja powinna korzystać z wbudowanej bazy danych H2, przechowującej dane w pamięci operacyjnej, które są usuwane po zamknięciu aplikacji.
-4. 
+
 ## Instalacja
 Projekt został wygenerowany za pomocą Spring Initializr[https://start.spring.io] projekt startowy dla języka Java 21 oparty o narzędzie Maven. Wymagania do projektu:
 > * Metoda dystrybucji: **JAR**
