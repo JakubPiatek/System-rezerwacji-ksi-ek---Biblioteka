@@ -147,42 +147,20 @@ Zwraca listę wszystkich tytułów książek, jeśli parametr {available} jest u
 
 Zwraca listę tytułów książek, których liczba dostępnych egzemplarzy jest większa niż liczba wypożyczonych, jeśli parametr {available} jest ustawiony na true.
 
-
-
-
-
-! -- PATCH /books/return lub PATCH /books/rent (uwzględniając obsługę błędów)
+```diff
+! -- GET /books/{id}  (uwzględniając obsługę błędów)
 ```
+![image](https://github.com/user-attachments/assets/ca6dd3ed-2914-4ff0-bad0-5b9bcd578d32)
 
+Zwraca informacje o wypożyczonych egzemplarzach książki o podanym {id}.
 
+![image](https://github.com/user-attachments/assets/ab8a530b-a2db-47da-9fb5-94a8cb8c87bb)
 
-System rezerwacji książek w bibliotece umożliwia
+Nieprawidłowy format ID książki.
 
+![image](https://github.com/user-attachments/assets/41b264ac-6cf1-408a-826f-1de47b3b4b65)
 
-GET /books/{id}(uwzględniając obsługę błędów)
-Zwraca informacje na temat wypożyczonych egzemplarzy dla tytułu o podanym {id}
-
-
-![image](https://github.com/user-attachments/assets/8176f277-01ab-4009-b809-28a1a39b72ec)
-
-## Zasoby i funkcjonalność są udostępniane przez REST API zgodne z dokumentacją zawartą w pliku library-rest-service.yaml.
-
-![image](https://github.com/user-attachments/assets/8da9bce7-7c87-41d3-8f49-d56a19d07aad)
-
-## Wyniki testów dla następujących metod wraz z omówieniem dołącz do sprawozdania.
-### Uzytkownicy:
-GET /users
-
-
-- Wypożyczanie oraz zwracanie książek przez użytkowników
-
-
-System powinien umożliwiać:
-wypożyczenie oraz zwrot książki przez użytkownika.
-
-
-
-
+Książka o podanym ID nie istnieje.
 
 
 
