@@ -83,17 +83,19 @@ http://localhost:8080/h2-console/
 ![image](https://github.com/user-attachments/assets/dc87e579-2855-4ae1-a84b-08ff8d4bcfae)
 
 ## Funkcje systemu
-### Przykładowe wyniki dla metod dla zasobu /users, reprezentującego użytkowników 
+### Przykładowe wyniki dla metod dotyczących zasobu /users, reprezentującego użytkowników
+Wyniki testów dla poniższych metod, wraz z omówieniem:
 ```diff
-! Wyniki testów dla następujących metod wraz z omówieniem dołącz do sprawozdania.
 ! -- GET /users (uwzględniając obsługę błędów)
+```
+![image](https://github.com/user-attachments/assets/1d8ee3da-0e99-4a7e-b067-a0a81a96cd2b)
+
+
 ! -- DELETE /users (uwzględniając obsługę błędów)
 ! -- POST /users
 ! -- GET /books (uwzględniając filtrowanie)
 ! -- PATCH /books/return lub PATCH /books/rent (uwzględniając obsługę błędów)
 ```
-
-
 
 System rezerwacji książek w bibliotece umożliwia
 
