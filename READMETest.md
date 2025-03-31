@@ -40,7 +40,7 @@ Po pobraniu projektu uruchom aplikację za pomocą:
 ![image](https://github.com/user-attachments/assets/c54c2297-46c3-4c5a-96c6-8b251d07d78f)
 
 
-## Możliwość wykonywania zapytań w przeglądarce po uruchomieniu aplikacji: 
+## Możliwość wykonywania zapytań w przeglądarce po uruchomieniu aplikacji
 Po wpisaniu adresu url:
 ```bash
 http://localhost:8080/h2-console/
