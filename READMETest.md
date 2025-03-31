@@ -87,6 +87,7 @@ Wyniki testów dla poniższych metod, wraz z omówieniem:
 ! -- GET /users
 ```
 ![image](https://github.com/user-attachments/assets/1d8ee3da-0e99-4a7e-b067-a0a81a96cd2b)
+
 Zwraca listę użytkowników.
 
 ```diff
@@ -100,41 +101,56 @@ Dodaje nowego użytkownika do systemu.
 ! -- GET /users/{id} (uwzględniając obsługę błędów)
 ```
 ![image](https://github.com/user-attachments/assets/99b0f052-5e38-4d03-8de6-f13f697af636)
+
 Informacje o koncie użytkownika o podanym {id}.
 
 ![image](https://github.com/user-attachments/assets/82d4b027-5dae-4e94-be9b-11f2ca1710c7)
+
 Nieprawidłowy format ID użytkownika.
 
 ![image](https://github.com/user-attachments/assets/d6b28f79-c3e0-4cff-8d11-bf23dcc37f6b)
+
 Użytkownik o podanym ID nie istnieje
 
 ```diff
 ! -- DELETE /users (uwzględniając obsługę błędów)
 ```
 ![image](https://github.com/user-attachments/assets/bdd2057e-f8e7-41d2-812f-ce645c7708b1)
-Usuwa użytkownika o podanym {id} z systemu
+
+Usuwa użytkownika o podanym {id} z systemu.
 
 ![image](https://github.com/user-attachments/assets/e177604b-ce5c-4c0c-898f-fe9f18ceb6c2)
-Nie można usunąć użytkownika jeśli posiada na koncie nie oddane książki
+
+Nie można usunąć użytkownika jeśli posiada na koncie nie oddane książki.
 
 ![image](https://github.com/user-attachments/assets/2ea8f4f4-8857-49fe-8d3a-f44623e02a4a)
+
 Nieprawidłowy format ID użytkownika.
 
 ![image](https://github.com/user-attachments/assets/f65c7052-538f-453d-b76b-7fac8b82a8be)
 
-Użytkownik o podanym ID nie istnieje
+Użytkownik o podanym ID nie istnieje.
 
 ### Przykładowe wyniki dla metod dotyczących zasobu /books, reprezentującego książki
 Wyniki testów dla poniższych metod, wraz z omówieniem:
 ```diff
-! -- GET /books
+! -- GET /books?available=false  (uwzględniając filtrowanie)
 ```
+![image](https://github.com/user-attachments/assets/f8b9650b-3f23-4d02-b3a2-9324e6d5de5e)
+
+Zwraca listę wszystkich tytułów książek, jeśli parametr {available} jest ustawiony na false. Parametr {available} jest opcjonalny.
+
+```diff
+! -- GET /books?available=true  (uwzględniając filtrowanie)
+```
+![image](https://github.com/user-attachments/assets/da77ee26-c43f-43e5-812c-988cf0eca13a)
+
+Zwraca listę tytułów książek, których liczba dostępnych egzemplarzy jest większa niż liczba wypożyczonych, jeśli parametr {available} jest ustawiony na true.
 
 
 
 
-! -- POST /users
-! -- GET /books (uwzględniając filtrowanie)
+
 ! -- PATCH /books/return lub PATCH /books/rent (uwzględniając obsługę błędów)
 ```
 
@@ -142,32 +158,6 @@ Wyniki testów dla poniższych metod, wraz z omówieniem:
 
 System rezerwacji książek w bibliotece umożliwia
 
-5. Wyniki testów dla następujących metod wraz z omówieniem dołącz do sprawozdania.
-Uzytkownicy:
-GET /users
-
-
-
-DELETE /users/{id} (uwzględniając obsługę błędów)
-
-![image](https://github.com/user-attachments/assets/57e0486c-24c9-4f34-94a4-0b4364b77570)
-
-Nie można usunąć użytkownika, który ma wypożyczoną książkę
-
-![image](https://github.com/user-attachments/assets/4d085ae7-f96e-4006-86a0-f31a189d6f56)
-
-
-
-
-Ksiazki:
-GET /books (uwzględniając filtrowanie)
-
-
-![image](https://github.com/user-attachments/assets/b1daf11e-9be2-4981-895d-0a7e8b289377)
-Pobranie listy dostępnych książek (liczba dostępnych egzemplarzy większa niż liczba wypożyczonych)
-
-
-![image](https://github.com/user-attachments/assets/347a7f6b-daae-4c01-a394-8da329fadb53)
 
 GET /books/{id}(uwzględniając obsługę błędów)
 Zwraca informacje na temat wypożyczonych egzemplarzy dla tytułu o podanym {id}
@@ -184,73 +174,11 @@ Zwraca informacje na temat wypożyczonych egzemplarzy dla tytułu o podanym {id}
 GET /users
 
 
-
-System rezerwacji książek w bibliotece umożliwia:
-
-- Pobieranie listy użytkowników, dodawanie nowych oraz usuwanie istniejących
-
-- Pobieranie listy dostępnych książek
-- 
-- obieranie informacji o konkretnej książce wraz z jej historią wypożyczeń
-
 - Wypożyczanie oraz zwracanie książek przez użytkowników
 
 
 System powinien umożliwiać:
-pobranie listy użytkowników, usuwanie oraz dodawanie nowych użytkowników,
-pobranie listy dostępnych książek,
-pobranie informacji o książce wraz z jej historią wypożyczeń,
 wypożyczenie oraz zwrot książki przez użytkownika.
-
-
-
-
-
-5. Wyniki testów dla następujących metod wraz z omówieniem dołącz do sprawozdania.
-Uzytkownicy:
-GET /users
-
-
-![image](https://github.com/user-attachments/assets/1d8ee3da-0e99-4a7e-b067-a0a81a96cd2b)
-
-GET /users/{id} (uwzględniając obsługę błędów)
-
-![image](https://github.com/user-attachments/assets/a9d84913-105c-4dca-983a-f54eabe8b33b)
-
-
-DELETE /users/{id} (uwzględniając obsługę błędów)
-
-![image](https://github.com/user-attachments/assets/57e0486c-24c9-4f34-94a4-0b4364b77570)
-
-Nie można usunąć użytkownika, który ma wypożyczoną książkę
-
-![image](https://github.com/user-attachments/assets/4d085ae7-f96e-4006-86a0-f31a189d6f56)
-
-POST /users
-
-
-![image](https://github.com/user-attachments/assets/9015b0c1-ab1b-46de-8ff8-a9a359de3941)
-
-
-![image](https://github.com/user-attachments/assets/81c98089-0130-4e6f-b1bb-133d1c5ad835)
-
-Ksiazki:
-GET /books (uwzględniając filtrowanie)
-
-
-![image](https://github.com/user-attachments/assets/b1daf11e-9be2-4981-895d-0a7e8b289377)
-Pobranie listy dostępnych książek (liczba dostępnych egzemplarzy większa niż liczba wypożyczonych)
-
-
-![image](https://github.com/user-attachments/assets/347a7f6b-daae-4c01-a394-8da329fadb53)
-
-GET /books/{id}(uwzględniając obsługę błędów)
-Zwraca informacje na temat wypożyczonych egzemplarzy dla tytułu o podanym {id}
-
-
-![image](https://github.com/user-attachments/assets/8176f277-01ab-4009-b809-28a1a39b72ec)
-
-
 
 
 
