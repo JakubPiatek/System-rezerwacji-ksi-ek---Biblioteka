@@ -39,6 +39,9 @@ Po pobraniu projektu uruchom aplikację za pomocą:
 ## Diagram ERD bazy danych
 ![image](https://github.com/user-attachments/assets/c54c2297-46c3-4c5a-96c6-8b251d07d78f)
 
+## Plik SQL z zapisanym rekordami do bazy danych 
+![image](https://github.com/user-attachments/assets/d5be4589-8f55-4e4f-a894-89dcc401f8aa)
+
 ## Konfiguracja połączenia do bazy danych H2 została zapisana w pliku `application.properties`:
 ```ini
    spring.datasource.url=jdbc:h2:mem:librarydb
@@ -81,6 +84,54 @@ http://localhost:8080/h2-console/
 
 ## Funkcje systemu
 System rezerwacji książek w bibliotece umożliwia
+
+5. Wyniki testów dla następujących metod wraz z omówieniem dołącz do sprawozdania.
+Uzytkownicy:
+GET /users
+
+
+![image](https://github.com/user-attachments/assets/1d8ee3da-0e99-4a7e-b067-a0a81a96cd2b)
+
+GET /users/{id} (uwzględniając obsługę błędów)
+
+![image](https://github.com/user-attachments/assets/a9d84913-105c-4dca-983a-f54eabe8b33b)
+
+
+DELETE /users/{id} (uwzględniając obsługę błędów)
+
+![image](https://github.com/user-attachments/assets/57e0486c-24c9-4f34-94a4-0b4364b77570)
+
+Nie można usunąć użytkownika, który ma wypożyczoną książkę
+
+![image](https://github.com/user-attachments/assets/4d085ae7-f96e-4006-86a0-f31a189d6f56)
+
+POST /users
+
+
+![image](https://github.com/user-attachments/assets/9015b0c1-ab1b-46de-8ff8-a9a359de3941)
+
+
+![image](https://github.com/user-attachments/assets/81c98089-0130-4e6f-b1bb-133d1c5ad835)
+
+Ksiazki:
+GET /books (uwzględniając filtrowanie)
+
+
+![image](https://github.com/user-attachments/assets/b1daf11e-9be2-4981-895d-0a7e8b289377)
+Pobranie listy dostępnych książek (liczba dostępnych egzemplarzy większa niż liczba wypożyczonych)
+
+
+![image](https://github.com/user-attachments/assets/347a7f6b-daae-4c01-a394-8da329fadb53)
+
+GET /books/{id}(uwzględniając obsługę błędów)
+Zwraca informacje na temat wypożyczonych egzemplarzy dla tytułu o podanym {id}
+
+
+![image](https://github.com/user-attachments/assets/8176f277-01ab-4009-b809-28a1a39b72ec)
+
+
+
+
 
 
 
