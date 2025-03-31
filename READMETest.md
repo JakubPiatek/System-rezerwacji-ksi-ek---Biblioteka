@@ -84,17 +84,35 @@ http://localhost:8080/h2-console/
 ### Przykładowe wyniki dla metod dotyczących zasobu /users, reprezentującego użytkowników
 Wyniki testów dla poniższych metod, wraz z omówieniem:
 ```diff
-! -- GET /users (uwzględniając obsługę błędów)
+! -- GET /users
 ```
 ![image](https://github.com/user-attachments/assets/1d8ee3da-0e99-4a7e-b067-a0a81a96cd2b)
 
-Zwrócenie listy wszystkich użytkowników.
+Zwraca listę użytkowników.
+
+```diff
+! -- POST /users
+```
+![image](https://github.com/user-attachments/assets/9015b0c1-ab1b-46de-8ff8-a9a359de3941)
+
+Dodaje nowego użytkownika do systemu.
+
+```diff
+! -- GET /users/{id}
+```
+
+![image](https://github.com/user-attachments/assets/81c98089-0130-4e6f-b1bb-133d1c5ad835)
+
+Informacje o koncie użytkownika o podanym {id}.
+
 
 ! -- DELETE /users (uwzględniając obsługę błędów)
 ! -- POST /users
 ! -- GET /books (uwzględniając filtrowanie)
 ! -- PATCH /books/return lub PATCH /books/rent (uwzględniając obsługę błędów)
 ```
+
+
 
 System rezerwacji książek w bibliotece umożliwia
 
@@ -118,13 +136,8 @@ Nie można usunąć użytkownika, który ma wypożyczoną książkę
 
 ![image](https://github.com/user-attachments/assets/4d085ae7-f96e-4006-86a0-f31a189d6f56)
 
-POST /users
 
 
-![image](https://github.com/user-attachments/assets/9015b0c1-ab1b-46de-8ff8-a9a359de3941)
-
-
-![image](https://github.com/user-attachments/assets/81c98089-0130-4e6f-b1bb-133d1c5ad835)
 
 Ksiazki:
 GET /books (uwzględniając filtrowanie)
