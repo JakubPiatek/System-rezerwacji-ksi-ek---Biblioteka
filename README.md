@@ -2,15 +2,15 @@
 
 System rezerwacji książek w bibliotece umożliwia:
 
-- Pobieranie listy użytkowników, dodawanie nowych oraz usuwanie istniejących.
+- Pobieranie listy użytkowników, dodawanie nowych oraz usuwanie istniejących
 
-- Pobieranie listy dostępnych książek.
+- Pobieranie listy dostępnych książek
+- 
+- obieranie informacji o konkretnej książce wraz z jej historią wypożyczeń
 
-- obieranie informacji o konkretnej książce wraz z jej historią wypożyczeń.
+- Wypożyczanie oraz zwracanie książek przez użytkowników
 
-- Wypożyczanie oraz zwracanie książek przez użytkowników.
-
-## Installation
+## Instalacja
 
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
 
