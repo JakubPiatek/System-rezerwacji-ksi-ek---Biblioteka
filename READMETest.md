@@ -39,7 +39,14 @@ Po pobraniu projektu uruchom aplikację za pomocą:
 ## Diagram ERD bazy danych
 ![image](https://github.com/user-attachments/assets/c54c2297-46c3-4c5a-96c6-8b251d07d78f)
 
-
+## Konfiguracja połączenia do bazy danych H2 została zapisana w pliku `application.properties`:
+```ini
+   spring.datasource.url=jdbc:h2:mem:librarydb
+   spring.datasource.driverClassName=org.h2.Driver
+   spring.datasource.username=admin
+   spring.datasource.password=password
+   spring.h2.console.enabled=true
+```
 ## Możliwość wykonywania zapytań w przeglądarce po uruchomieniu aplikacji
 Po wpisaniu adresu url:
 ```bash
