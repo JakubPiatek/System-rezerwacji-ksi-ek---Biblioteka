@@ -34,11 +34,26 @@ Po pobraniu projektu uruchom aplikację za pomocą:
 
 ![image](https://github.com/user-attachments/assets/5e810cbf-e152-4c9c-b9f1-475eb513ce98)
 
+# Tabela bazy danych H2
+
+Diagram ERD bazy danych
+![image](https://github.com/user-attachments/assets/80588b35-cc70-4656-a9c1-b3f26b409505)
+
+Możliwość wykonywania zapytań w przeglądarce po uruchomieniu aplikacji: 
+Po wpisaniu adresu url:
 ```bash
 http://localhost:8080/h2-console/
 ```
 
 
+## Tabela `users`: Przechowuję dane użytkowników systemu. Zawiera informacje o identyfikatorze użytkownika (ID), nazwię użytkownika oraz przypisanych rolach. 
+
+
+
+
+```bash
+http://localhost:8080/h2-console/
+```
 
 ## Funkcje systemu
 System rezerwacji książek w bibliotece umożliwia
@@ -64,7 +79,9 @@ wypożyczenie oraz zwrot książki przez użytkownika.
 
 
 
-3. Baza danych H2
+3.Tabela bazy danych H2
+4.
+5. Baza danych H2
    
 Tabela bazy danych
 ![image](https://github.com/user-attachments/assets/c54e7a59-fa79-41d4-95e6-1af0c1c6a898)
