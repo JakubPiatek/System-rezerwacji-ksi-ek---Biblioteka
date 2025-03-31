@@ -87,25 +87,21 @@ Wyniki testów dla poniższych metod, wraz z omówieniem:
 ! -- GET /users
 ```
 ![image](https://github.com/user-attachments/assets/1d8ee3da-0e99-4a7e-b067-a0a81a96cd2b)
-
 Zwraca listę użytkowników.
 
 ```diff
 ! -- POST /users
 ```
 ![image](https://github.com/user-attachments/assets/4e964f6c-dac3-4e75-9c72-8df9862a9ee3)****
-
 Dodaje nowego użytkownika do systemu.
 
 ```diff
 ! -- GET /users/{id} (uwzględniając obsługę błędów)
 ```
 ![image](https://github.com/user-attachments/assets/99b0f052-5e38-4d03-8de6-f13f697af636)
-
 Informacje o koncie użytkownika o podanym {id}.
 
 ![image](https://github.com/user-attachments/assets/82d4b027-5dae-4e94-be9b-11f2ca1710c7)
- 
 Nieprawidłowy format ID użytkownika.
 
 ![image](https://github.com/user-attachments/assets/d6b28f79-c3e0-4cff-8d11-bf23dcc37f6b)
