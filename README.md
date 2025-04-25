@@ -274,7 +274,8 @@ Wypożyczenie książki o podanym ID przez użytkownika o podanym {ID}.
 Książka o ID = 6 została wypożyczona prez użytkownika o ID =  10.
 
 
-![image](https://github.com/user-attachments/assets/a89c2ce5-fd2b-4512-a95b-217ec1c56ce6)
+![image](https://github.com/user-attachments/assets/a38f321a-a1f2-4c44-8eca-7d8bca3ce574)
+
 Nie ma dostępnych wolnych egzemplarzy dla podanego identyfikatora książki
 
 ![image](https://github.com/user-attachments/assets/914cbc6f-2cfb-422d-ad11-2ecc0863cade)
