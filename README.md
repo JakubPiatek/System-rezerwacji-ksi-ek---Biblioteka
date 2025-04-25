@@ -263,15 +263,19 @@ Wypożyczenie o podanym ID nie istnieje.
 !-- PATCH /rents/rent/{id} (uwzględniając obsługę błędów)
 ```
 
-![image](https://github.com/user-attachments/assets/8dea55cd-4a47-4fe3-b037-27fb96759377)
+![image](https://github.com/user-attachments/assets/a27f829e-3888-4736-8b07-f3f0ffcf3f6e)
+
 Wypożyczenie książki o podanym ID przez użytkownika o podanym {ID}.
 Książka o ID = 6 została wypożyczona prez użytkownika o ID =  40.
 
+![image](https://github.com/user-attachments/assets/5c9eb515-13bf-4cf6-be58-9df38b43fbb4)
 
-![image](https://github.com/user-attachments/assets/0e90332d-66ba-41a7-9fdc-615e99056c00)
+Wypożyczenie książki o podanym ID przez użytkownika o podanym {ID}.
+Książka o ID = 6 została wypożyczona prez użytkownika o ID =  10.
 
+
+![image](https://github.com/user-attachments/assets/a89c2ce5-fd2b-4512-a95b-217ec1c56ce6)
 Nie ma dostępnych wolnych egzemplarzy dla podanego identyfikatora książki
-
 
 ![image](https://github.com/user-attachments/assets/914cbc6f-2cfb-422d-ad11-2ecc0863cade)
 
@@ -294,26 +298,23 @@ Podany identyfikator użytkownika nie istnieje lub jest nieprawidłowy
 Zwrot wypożyczonego egzemplarza książki o podanym {ID} przez konretnego użytkownika.
 ID użytkownika podane w (header)
 
+![image](https://github.com/user-attachments/assets/6a9b234b-8ee2-439e-977a-60840f52747a)
 
-![image](https://github.com/user-attachments/assets/cbac5572-07e9-40db-ad10-344554789e96)
+![image](https://github.com/user-attachments/assets/caf78574-48e4-4e56-bc58-519f50978045)
 
 Nie ma możliwośći zwrotu książki, którą użytkownik już wcześniej zwrócił
 
+![image](https://github.com/user-attachments/assets/106f6ad1-093f-4584-a36b-5375b1ac3f50)
 
-![image](https://github.com/user-attachments/assets/6b902e1f-99f6-4f87-b86b-7d0af3c708a6)
-![image](https://github.com/user-attachments/assets/9f54cdf8-c2c3-4e86-ad5e-d21f3cfa9dd9)
+Możliwość wypożyczenia zwróconej książki przez tego samego użytkownika
 
-Możliwość zwrotu i wypożyczenia tej samej książki 
-
-
-![image](https://github.com/user-attachments/assets/98c33108-9c70-4de9-90a9-156cafc09b1f)
-
-![image](https://github.com/user-attachments/assets/fd7e987f-6e67-4900-93f6-411d39da4d8d)
+![image](https://github.com/user-attachments/assets/46398e94-785f-4213-9b1c-c11c48628614)
+![image](https://github.com/user-attachments/assets/e6ee1800-7963-44a8-89bb-5a3df59c8b9c)
 
 Podany identyfikator książki nie istnieje lub jest nieprawidłowy
 
-![image](https://github.com/user-attachments/assets/97bcde76-cb8b-49bd-8018-51408588563b)
-![Uploading image.png…]()
+![image](https://github.com/user-attachments/assets/95641ff2-afc8-42cc-a1bc-5a99172540b2)
+![image](https://github.com/user-attachments/assets/45b9d2a9-4883-4c44-8d60-0aa59f6c5506)
 
 Podany identyfikator użytkownika nie istnieje lub jest nieprawidłowy
 
