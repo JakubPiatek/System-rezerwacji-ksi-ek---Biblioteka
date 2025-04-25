@@ -137,7 +137,9 @@ Wyniki testów dla poniższych metod, wraz z omówieniem:
 ```diff
 ! -- GET /books?available=false  (uwzględniając filtrowanie)
 ```
-![image](https://github.com/user-attachments/assets/f8b9650b-3f23-4d02-b3a2-9324e6d5de5e)
+![image](https://github.com/user-attachments/assets/347f9978-bf5a-4b37-b58b-08c19d1b05a2)
+![image](https://github.com/user-attachments/assets/bcfaef51-6e34-4cd0-bc5e-dcf88a6c1251)
+
 
 Zwraca listę wszystkich tytułów książek, jeśli parametr {available} jest ustawiony na false. Parametr {available} jest opcjonalny.
 
