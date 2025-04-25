@@ -163,7 +163,7 @@ Wyszukanie wszystkich książek danego autora, z uwzględniem tytułów książe
 
 ![image](https://github.com/user-attachments/assets/0abde2a2-b7b7-4736-b190-4848adfb5712)
 
-Wyszukanie wszystkich książek danego autora, o konkretnym tytule z uwzględniem tytułów książek, które można wypożyczyć.
+Wyszukanie wszystkich książek danego autora, o konkretnym tytule, którą można wypożyczyć.
 
 
 ```diff
