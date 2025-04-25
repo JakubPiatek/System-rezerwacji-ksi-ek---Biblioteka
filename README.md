@@ -216,10 +216,8 @@ Wyniki testów dla poniższych metod, wraz z omówieniem:
 ```diff
 !-- Get /rents/
 ```
-![image](https://github.com/user-attachments/assets/e019440b-2707-44d9-8911-28678efe6db0)
-
-Wyświetl wszystkie wypożyczenia
 ![image](https://github.com/user-attachments/assets/899276aa-9e2a-4835-b777-30cb2218be1d)
+Wyświetl wszystkie wypożyczenia
 
 
 ```diff
