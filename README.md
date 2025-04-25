@@ -86,21 +86,22 @@ Wyniki testów dla poniższych metod, wraz z omówieniem:
 ```diff
 ! -- GET /users
 ```
-![image](https://github.com/user-attachments/assets/1d8ee3da-0e99-4a7e-b067-a0a81a96cd2b)
+![image](https://github.com/user-attachments/assets/c6870758-a70e-44dc-9ce5-736a260712f2)
+![image](https://github.com/user-attachments/assets/06fbfbbe-56a7-4149-bbf3-3bb513545bf8)
 
 Zwraca listę użytkowników.
 
 ```diff
 ! -- POST /users
 ```
-![image](https://github.com/user-attachments/assets/c3cb501d-cd2d-4ad0-b463-df0a48a810c9)
+![image](https://github.com/user-attachments/assets/36e7131e-9d11-4674-9ee9-b970fd8dece0)
 
 Dodaje nowego użytkownika do systemu.
 
 ```diff
 ! -- GET /users/{id} (uwzględniając obsługę błędów)
 ```
-![image](https://github.com/user-attachments/assets/99b0f052-5e38-4d03-8de6-f13f697af636)
+![image](https://github.com/user-attachments/assets/ec941067-62e5-4316-b0e2-42e1276bb01b)
 
 Informacje o koncie użytkownika o podanym {id}.
 
@@ -141,11 +142,27 @@ Wyniki testów dla poniższych metod, wraz z omówieniem:
 Zwraca listę wszystkich tytułów książek, jeśli parametr {available} jest ustawiony na false. Parametr {available} jest opcjonalny.
 
 ```diff
-! -- GET /books?available=true  (uwzględniając filtrowanie)
+! -- GET /books?available=true 
 ```
-![image](https://github.com/user-attachments/assets/da77ee26-c43f-43e5-812c-988cf0eca13a)
+![image](https://github.com/user-attachments/assets/a782771b-9104-4157-b709-36d9963844e3)
 
-Zwraca listę tytułów książek, których liczba dostępnych egzemplarzy jest większa niż liczba wypożyczonych, jeśli parametr {available} jest ustawiony na true.
+Zwraca listę tytułów książek, które można wypożyczyć
+
+```diff
+! -- GET /books?available=true&author=Mark Lutz
+```
+Wyszukanie wszystkich książek danego autora, z uwzględniem tytułów książek, które można wypożyczyć
+
+![image](https://github.com/user-attachments/assets/50e74cc1-2149-4e8c-8f5c-c88d2a5e048d)
+
+```diff
+! -- GET /books?available=true&author=Mark Lutz&title=Python. Leksykon kieszonkowy
+```
+
+![image](https://github.com/user-attachments/assets/0abde2a2-b7b7-4736-b190-4848adfb5712)
+
+Wyszukanie wszystkich książek danego autora, o konkretnym tytule z uwzględniem tytułów książek, które można wypożyczyć.
+
 
 ```diff
 ! -- GET /books/{id}  (uwzględniając obsługę błędów)
@@ -166,7 +183,30 @@ Książka o podanym ID nie istnieje.
 ```diff
 ! -- POST /books
 ```
+
+![image](https://github.com/user-attachments/assets/e143a43c-6872-4894-8dca-26a670d259b9)
+
 Dodanie nowej książki do systemu.
+
+
+```diff
+! -- DELETE /books (uwzględniając obsługę błędów)
+```
+![image](https://github.com/user-attachments/assets/7be5ccf6-8ad0-45da-9f47-1bc6a364a090)
+
+Usuwa książkę o podanym {ID}
+
+![image](https://github.com/user-attachments/assets/f7fe0a29-1631-4595-ae5f-69e3d7a894c8)
+
+Nie można usunąć książki jeśli nie zostały zwrócone wszystkie egzemplarze tej książki
+
+![image](https://github.com/user-attachments/assets/ac8ac17f-a27e-4ba8-b797-4c14dbf1c265)
+
+Nieprawidłowy format ID książki.
+
+![image](https://github.com/user-attachments/assets/09645b40-c3fb-4832-b98b-ecb96fa3e96a)
+
+Książka o podanym ID nie istnieje.
 
 ### Przykładowe wyniki dla metod dotyczących zasobu /rents, reprezentującego wypożyczenia
 Wyniki testów dla poniższych metod, wraz z omówieniem:
@@ -174,27 +214,110 @@ Wyniki testów dla poniższych metod, wraz z omówieniem:
 ```diff
 !-- Get /rents/
 ```
+![image](https://github.com/user-attachments/assets/e019440b-2707-44d9-8911-28678efe6db0)
+
 Wyświetl wszystkie wypożyczenia
+![image](https://github.com/user-attachments/assets/899276aa-9e2a-4835-b777-30cb2218be1d)
 
 
 ```diff
-!-- Get /rents/{id} (obsługa błedów)
+!-- Get /rents/{id}
 ```
+
+![image](https://github.com/user-attachments/assets/a1c69d11-e440-49b0-a10c-ee78f89fbadf)
+
 Wyświetl wypożyczenie o podanym {ID}
 
+![image](https://github.com/user-attachments/assets/a2ead01f-492f-4dbc-83ad-933c0e04ae90)
+
+Nieprawidłowy format ID wypożyczenia.
+
+![image](https://github.com/user-attachments/assets/4a00db7e-e97a-4f10-8e27-ee9bac24fa86)
+
+Wypożyczenie o podanym ID nie istnieje.
+
 
 ```diff
-!-- PATCH /rents/{id} (uwzględniając obsługę błędów)
+! -- DELETE /rents (uwzględniając obsługę błędów)
 ```
+![image](https://github.com/user-attachments/assets/1b8019ab-6ca1-4f00-b329-3d4cff9ad3dc)
 
-Wypożyczenie egzemplarza książki o podanym {id} przez konretnego użytkownika.
-ID użytkownika podane w (header)
+Usuwa wypożyczenie o podanym {ID}
+
+![image](https://github.com/user-attachments/assets/c8e492e4-059a-4204-9a6e-99eff32042e1)
+
+Nie można usunąć wypożyczenia jeśli nie został zwrócony konkretny egzemplarz książki
+
+![image](https://github.com/user-attachments/assets/ff3fe7d2-d02e-4cbe-9502-5885dc73af1b)
+
+Nieprawidłowy format ID wypożyczenia.
+
+![image](https://github.com/user-attachments/assets/057e956c-f503-4031-9e53-873d5d863e0a)
+
+Wypożyczenie o podanym ID nie istnieje.
+
 
 ```diff
-! -- PATCH /rents/return/{id}  PATCH //rent (uwzględniając obsługę błędów)
+!-- PATCH /rents/rent/{id} (uwzględniając obsługę błędów)
 ```
-Zwrot wypożyczonego egzemplarza książki o podanym {id} przez konretnego użytkownika.
+
+![image](https://github.com/user-attachments/assets/8dea55cd-4a47-4fe3-b037-27fb96759377)
+Wypożyczenie książki o podanym ID przez użytkownika o podanym {ID}.
+Książka o ID = 6 została wypożyczona prez użytkownika o ID =  40.
+
+
+![image](https://github.com/user-attachments/assets/0e90332d-66ba-41a7-9fdc-615e99056c00)
+
+Nie ma dostępnych wolnych egzemplarzy dla podanego identyfikatora książki
+
+
+![image](https://github.com/user-attachments/assets/914cbc6f-2cfb-422d-ad11-2ecc0863cade)
+
+![image](https://github.com/user-attachments/assets/1316ceb4-fc1a-4299-9866-e018fce837b1)
+
+Podany identyfikator książki nie istnieje lub jest nieprawidłowy
+
+![image](https://github.com/user-attachments/assets/406e95ba-084a-4574-90bb-f6ba70ac1f2d)
+![image](https://github.com/user-attachments/assets/992f9355-59e8-41b9-9cda-a78d9cdacdfb)
+
+Podany identyfikator użytkownika nie istnieje lub jest nieprawidłowy
+
+
+```diff
+! -- PATCH /rents/return/{id}  
+```
+
+![image](https://github.com/user-attachments/assets/c01150b9-979b-4b78-9e5e-045082586002)
+
+Zwrot wypożyczonego egzemplarza książki o podanym {ID} przez konretnego użytkownika.
 ID użytkownika podane w (header)
+
+
+![image](https://github.com/user-attachments/assets/cbac5572-07e9-40db-ad10-344554789e96)
+
+Nie ma możliwośći zwrotu książki, którą użytkownik już wcześniej zwrócił
+
+
+![image](https://github.com/user-attachments/assets/6b902e1f-99f6-4f87-b86b-7d0af3c708a6)
+![image](https://github.com/user-attachments/assets/9f54cdf8-c2c3-4e86-ad5e-d21f3cfa9dd9)
+
+Możliwość zwrotu i wypożyczenia tej samej książki 
+
+
+![image](https://github.com/user-attachments/assets/98c33108-9c70-4de9-90a9-156cafc09b1f)
+
+![image](https://github.com/user-attachments/assets/fd7e987f-6e67-4900-93f6-411d39da4d8d)
+
+Podany identyfikator książki nie istnieje lub jest nieprawidłowy
+
+![image](https://github.com/user-attachments/assets/97bcde76-cb8b-49bd-8018-51408588563b)
+![Uploading image.png…]()
+
+Podany identyfikator użytkownika nie istnieje lub jest nieprawidłowy
+
+
+
+
 
 
 
