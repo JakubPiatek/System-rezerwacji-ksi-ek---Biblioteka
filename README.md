@@ -216,7 +216,8 @@ Wyniki testów dla poniższych metod, wraz z omówieniem:
 ```diff
 !-- Get /rents/
 ```
-![image](https://github.com/user-attachments/assets/899276aa-9e2a-4835-b777-30cb2218be1d)
+![image](https://github.com/user-attachments/assets/96e4f292-93c8-4ed6-9e91-470cd1e1539a)
+
 Wyświetl wszystkie wypożyczenia
 
 
@@ -224,15 +225,16 @@ Wyświetl wszystkie wypożyczenia
 !-- Get /rents/{id}
 ```
 
-![image](https://github.com/user-attachments/assets/a1c69d11-e440-49b0-a10c-ee78f89fbadf)
+![image](https://github.com/user-attachments/assets/e0dadd5e-59cf-4162-a4c6-cd1a72bb7f52)
 
 Wyświetl wypożyczenie o podanym {ID}
 
-![image](https://github.com/user-attachments/assets/a2ead01f-492f-4dbc-83ad-933c0e04ae90)
+![image](https://github.com/user-attachments/assets/a1b4fe12-cae6-45c5-99f6-54b19dc308c3)
 
 Nieprawidłowy format ID wypożyczenia.
 
-![image](https://github.com/user-attachments/assets/4a00db7e-e97a-4f10-8e27-ee9bac24fa86)
+![image](https://github.com/user-attachments/assets/4dba91e9-7d44-46e8-97cf-38069a6f5efd)
+
 
 Wypożyczenie o podanym ID nie istnieje.
 
